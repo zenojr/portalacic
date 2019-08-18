@@ -1,11 +1,21 @@
 <div class="top">
-    
-    <div class="logoContainer">
+    <div class="menuContainer">
         <div class="logoPrincipal">
-            <img src="../../assets/img/ACIC_logo.png" alt="">
+            <img src="../../assets/img/ACIC_logo.png" 
+                 alt="Acic Caçador">
         </div>
-    </div>
-    
-    
+        <div class="menuSuperior">
+            
+            <button mat-button
+                    [matMenuTriggerFor]="acic"> A ACIC </button>
+            <mat-menu #acic="matMenu">
+                <button mat-menu-item>Sobre a ACIC</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>      
+        </div>
+        <div>
+                <p>Teste</p>          
+        </div>
+    </div>    
 </div>
 
