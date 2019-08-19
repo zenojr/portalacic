@@ -1,28 +1,62 @@
-<div class="top">
-    <div class="menuContainer">
-        <div class="logoPrincipal">
-            <img src="../../assets/img/ACIC_logo.png" 
-                 alt="Acic Caçador">
-        </div>
-        <div class="menuSuperior">
+
+<div class="containerTopo">
+    <div class="logoPrincipal">
+        <img src="../../assets/img/ACIC_logo.png" 
+                alt="Acic Caçador">
+    </div>
+    <div class="menu">
+            <div class="menuSocial">
+                    <button mat-button> 
+                            Convênios
+                    </button>
+                </div>
+        <div class="menuSuperior">            
             <button mat-button
-            [matMenuTriggerFor]="acic"> A ACIC
+            [matMenuTriggerFor]="acic"> 
+            A ACIC
+            <mat-icon>keyboard_arrow_down</mat-icon>
             </button>
             <mat-menu #acic="matMenu">
-                <button mat-menu-item>Sobre a ACIC</button>
+                <button mat-menu-item>Sobre a ACIC 
+                </button>
                 <button mat-menu-item>Item 2</button>
-            </mat-menu>            
-        </div>
+            </mat-menu>
+            <button mat-button> 
+                Notícias
+            </button>
+            <button mat-button> 
+                Contatos
+            </button>
+            <button mat-button> 
+                Informações
+            </button>
+            
+        </div>        
         <div class="menuInferior">
             <button mat-button
-            [matMenuTriggerFor]="acic"> A ACIC
+            [matMenuTriggerFor]="acic">
+            Produtos
+            <mat-icon>keyboard_arrow_down</mat-icon>
             </button>
             <mat-menu #acic="matMenu">
                 <button mat-menu-item>Sobre a ACIC</button>
                 <button mat-menu-item>Item 2</button>
             </mat-menu>
+            <button mat-button
+            [matMenuTriggerFor]="acic">
+            Serviços
+            <mat-icon>keyboard_arrow_down</mat-icon>
+            </button>
+            <mat-menu #acic="matMenu">
+                <button mat-menu-item>Sobre a ACIC</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+            <button mat-button> 
+                Cursos e Palestras
+            </button>
+            <button mat-button> 
+                Convênios
+            </button>
         </div>
-        
-    </div>    
+    </div>
 </div>
-
