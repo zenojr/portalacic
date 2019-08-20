@@ -8,14 +8,12 @@
     justify-content: flex-start;
 }
 
+
 %flex-end {
     display: flex;
     justify-content: flex-end;
 }
 
-.menuSocial  {
-    margin-left: 100px;
-}
 
 .containerTopo {
     @extend %flex-start;
@@ -32,18 +30,28 @@
     margin-left: 60px;
 }
 
+
 .menuSuperior {
+    display: flex;
+    justify-content: space-between;
     color: white;
     height: 64px;
     top: 0px;
-    position: relative;
-    padding-top: 25px;    
+    padding-top: 25px;
+}
+
+.esquerdoSup {
+    
+}
+
+.direitoSup {
+    
 }
 
 .menuInferior {
     color: grey;
     height: 68px;
-    
+    display: flex;   
 }
 
 
