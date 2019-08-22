@@ -12,8 +12,36 @@
 %flex-end {
     display: flex;
     justify-content: flex-end;
+    align-content: center;
+    
 }
 
+.direitoSup {
+    @extend %flex-end;
+}
+
+.direitoSup button {
+    color: gray;
+}
+
+.social {
+    margin-right: 10px;
+    padding: 5px;
+    width: 25px;
+    color: grey;
+}
+
+.busca {
+    color: grey;
+    height: 30px;
+    width: 100px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+#facebook {
+    color: grey;
+}
 
 .containerTopo {
     @extend %flex-start;
