@@ -2,13 +2,50 @@
 <div class="logoPrincipal">
         <img src="../../assets/img/ACIC_logo.png" alt="">
     </div>
-    <mat-toolbar color="primary" class="menu">    
+    <mat-toolbar class="menu">    
         <mat-toolbar-row class="menuSuperior">
-            <span>Second Line</span>
+            <span>
+            <mat-menu #appMenu="matMenu">
+                <button mat-menu-item>Settings</button>
+                <button mat-menu-item>Help</button>
+            </mat-menu>
+                
+            <button mat-button [matMenuTriggerFor]="appMenu">
+                A ACIC
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </button>
+            </span>
+            <span>    
+                <button mat-button >
+                    Notícias
+                </button>
+            </span>
+            <span>    
+                <button mat-button >
+                    Contatos
+                </button>
+            </span>
+            <span>    
+                <button mat-button >
+                    Indicadores
+                </button>
+            </span>
             <span class="spacer"></span>
-            <mat-icon class="icon" 
-                    aria-hidden="false" 
-                    aria-label="icon">verified_user</mat-icon>
+            <span>
+                <mat-icon class="icon" aria-hidden="false" 
+                aria-label="icon">verified_user</mat-icon>
+            </span>
+            <span>
+                <mat-icon class="icon" aria-hidden="false" 
+                aria-label="icon">verified_user</mat-icon>
+            </span>
+            <span>
+                <mat-icon class="icon" aria-hidden="false" 
+                aria-label="icon">verified_user</mat-icon>
+            </span>
+            <span id="btnAssoc">                
+                <button mat-button>Associe-se à ACIC</button>
+            </span>            
         </mat-toolbar-row>
         
         <mat-toolbar-row class="menuInferior">
