@@ -8,7 +8,6 @@
     justify-content: flex-start;
 }
 
-
 %flex-end {
     display: flex;
     justify-content: flex-end;
@@ -16,33 +15,12 @@
     
 }
 
-.direitoSup {
-    @extend %flex-end;
+.icon {
+    padding: 0 14px;
 }
-
-.direitoSup button {
-    color: gray;
-}
-
-.social {
-    display: flex;
-    flex-direction: row;
-    margin-right: 10px;
-    padding: 5px;
-}
-
-.social img {
-    width: 25px;
-    
-    padding: 0px 0px 25px 10px;
-}
-
-
-.busca {
-    height: 30px;
-    width: 100px;
-    margin-left: 150px;
-    margin-bottom: 20px;
+  
+  .spacer {
+    flex: 1 1 auto;
 }
 
 .containerTopo {
@@ -57,40 +35,15 @@
 }
 
 .menu {
-    margin-left: 60px;
+    width: 1000px;
+    margin-top: -10px;
 }
 
 
 .menuSuperior {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    height: 64px;
-    top: 0px;
-    padding-top: 25px;
-}
-
-.esquerdoSup {
     
 }
 
-.direitoSup {
-    
-}
-
-.menuInferior {
-    color: grey;
-    height: 68px;
-    display: flex;   
-}
-
-.direitoInf {
-    
-}
-
-.busca {
-    margin-bottom: 10px;
-}
 
 .logoPrincipal {
     background-color: white;
@@ -99,6 +52,7 @@
     rgba(181, 181, 181, 0.5);
     width: 100px;        
     top: 0px;
+    
 }
 
 .logoPrincipal img {
