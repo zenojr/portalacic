@@ -5,7 +5,8 @@
              alt="Acic Caçador">
     </div>
     <div class="menu">
-        <div class="menuSuperior">
+            
+        <div fxFlex fxLayout class="menuSuperior">
             <div class="esquerdoSup">
                 <button mat-button
                 [matMenuTriggerFor]="acic"> 
@@ -29,10 +30,15 @@
             </div>
             <div class="direitoSup">
                 <div class="social">
-                        <i class="fab fa-instagram"></i>
-                    <img id="facebook" 
-                         src="../../assets/img/facebook-brands.svg">
-                         
+                    
+                            <img id="facebook" 
+                            src="../../assets/img/facebook-brands.svg">
+                    
+                            <img id="instagram" 
+                            src="../../assets/img/instagram-brands.svg">
+                    
+                            <fa-icon [icon]="faCoffee"></fa-icon>
+                            <img src="https://img.icons8.com/windows/32/000000/instagram-new.png">
                 </div>
                 <div class="btnAssoc">
                     <button mat-raised-button>
@@ -69,12 +75,19 @@
                 </button>
             </div>
             <div class="direitoInf">
-                <mat-form-field class="busca">
-                    <input matInput
-                           autocomplete="off" 
-                           placeholder="Pesquisar">
-                </mat-form-field>
-                <mat-icon>search</mat-icon>
+                <div class="searchInput">
+                        <mat-form-field class="busca">
+                            <input matInput type="text" placeholder="Procurar">
+                            <button mat-button
+                                    autocomplete="off" 
+                                    matSuffix 
+                                    mat-icon-button 
+                                    aria-label="Procurar">
+                                <mat-icon>search</mat-icon>
+                            </button>
+                        </mat-form-field>                        
+                    
+                </div>                
             </div>
         </div>
     </div>

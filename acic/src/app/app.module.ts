@@ -5,7 +5,12 @@ import { AppComponent             } from './app.component';
 import { MenuComponent            } from './menu/menu.component';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { MaterialModule           } from './material.module';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faSquare, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+
+
 
 import { TopoComponent } from './topo/topo.component';
 
@@ -21,9 +26,13 @@ import { TopoComponent } from './topo/topo.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    AngularFontAwesomeModule
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    library.add(faSquare, faCheckSquare);
+  }
+ }

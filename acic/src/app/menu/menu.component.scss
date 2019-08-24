@@ -25,22 +25,24 @@
 }
 
 .social {
+    display: flex;
+    flex-direction: row;
     margin-right: 10px;
     padding: 5px;
-    width: 25px;
-    color: grey;
 }
 
+.social img {
+    width: 25px;
+    
+    padding: 0px 0px 25px 10px;
+}
+
+
 .busca {
-    color: grey;
     height: 30px;
     width: 100px;
     margin-left: 150px;
     margin-bottom: 20px;
-}
-
-#facebook {
-    color: grey;
 }
 
 .containerTopo {
@@ -82,6 +84,13 @@
     display: flex;   
 }
 
+.direitoInf {
+    
+}
+
+.busca {
+    margin-bottom: 10px;
+}
 
 .logoPrincipal {
     background-color: white;
