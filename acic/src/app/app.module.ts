@@ -6,13 +6,8 @@ import { MenuComponent            } from './menu/menu.component';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { MaterialModule           } from './material.module';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSquare, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
-
-
-
 import { TopoComponent } from './topo/topo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,13 +21,12 @@ import { TopoComponent } from './topo/topo.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FontAwesomeModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor() {
-    library.add(faSquare, faCheckSquare);
   }
  }

@@ -1,5 +1,5 @@
 <div class="containerTopo">
-<div class="logoPrincipal">
+    <div class="logoPrincipal">
         <img src="../../assets/img/ACIC_logo.png" alt="">
     </div>
     <mat-toolbar class="menu">    
@@ -31,32 +31,67 @@
                 </button>
             </span>
             <span class="spacer"></span>
-            <span>
-                <mat-icon class="icon" aria-hidden="false" 
-                aria-label="icon">verified_user</mat-icon>
-            </span>
-            <span>
-                <mat-icon class="icon" aria-hidden="false" 
-                aria-label="icon">verified_user</mat-icon>
-            </span>
-            <span>
-                <mat-icon class="icon" aria-hidden="false" 
-                aria-label="icon">verified_user</mat-icon>
-            </span>
+            
+            <a href="#">
+                <mat-icon svgIcon="facebook" aria-hidden="false"></mat-icon>
+            </a>
+            <a href="#">
+                <mat-icon svgIcon="instagram" aria-hidden="false"></mat-icon>
+            </a>
+            <a href="#">
+                    <mat-icon svgIcon="linkedin" aria-hidden="false"></mat-icon>
+            </a>
             <span id="btnAssoc">                
                 <button mat-button>Associe-se à ACIC</button>
-            </span>            
+            </span>
         </mat-toolbar-row>
         
         <mat-toolbar-row class="menuInferior">
-            <span>Third Line</span>
+            <span>
+                <mat-menu #appMenu="matMenu">
+                    <button mat-menu-item>Settings</button>
+                    <button mat-menu-item>Help</button>
+                </mat-menu>
+                            
+                <button mat-button [matMenuTriggerFor]="appMenu">
+                        Produtos
+                <mat-icon>keyboard_arrow_down</mat-icon>
+                </button>
+            </span>
+            <span>
+                <mat-menu #appMenu="matMenu">
+                    <button mat-menu-item>Settings</button>
+                    <button mat-menu-item>Help</button>
+                </mat-menu>
+                                
+                <button mat-button [matMenuTriggerFor]="appMenu">
+                        Serviços Empresariais
+                    <mat-icon>keyboard_arrow_down</mat-icon>
+                </button>
+            </span>
+            <span>    
+                <button mat-button >
+                    Cursos e Palestras
+                </button>
+            </span>
+            <span>    
+                <button mat-button >
+                    Convênios
+                </button>
+            </span>
+            
             <span class="spacer"></span>
-            <mat-icon class="icon" 
-                    aria-hidden="false" 
-                    aria-label="Heart">favorite</mat-icon>
-            <mat-icon class="icon" 
-                    aria-hidden="false" 
-                    aria-label="Delete icon">delete</mat-icon>
+            <span>
+                <mat-form-field class="procurar">
+                    <input matInput type="text" 
+                           placeholder="Procurar"
+                           autocomplete="off">
+                    <button mat-button
+                            matSuffix mat-icon-button aria-label="Clear">
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </mat-form-field>
+            </span>
         </mat-toolbar-row>
     </mat-toolbar>
             

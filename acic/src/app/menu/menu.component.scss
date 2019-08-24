@@ -51,10 +51,26 @@
     color: white;
 }
 
+.menuSuperior a {
+    text-decoration: none;
+}
+
+.menuSuperior a {
+    color: white;
+}
+
+mat-icon {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
 .menuSuperior span {
     text-align: left;
 }
 
+.menuInferior {
+    color: grey;
+}
 
 .logoPrincipal {
     background-color: white;
@@ -68,5 +84,11 @@
 
 .logoPrincipal img {
     width: 100px;
+}
+
+.procurar {
+    
+    width: 150px;
+    font-size: 14px;
 }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-
+import {DomSanitizer} from '@angular/platform-browser';
+import {MatIconRegistry} from '@angular/material/icon';
 
 @Component({
   selector: 'app-menu',
@@ -8,10 +8,24 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-  faCoffee = faCoffee;
-  constructor() {
 
+
+
+
+  constructor( iconRegistry: MatIconRegistry, sanitizer: DomSanitizer ) {
+    iconRegistry.addSvgIcon(
+      'facebook',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/facebook-brands.svg'));
+
+    iconRegistry.addSvgIcon(
+      'instagram',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/instagram-brands.svg'));
+
+    iconRegistry.addSvgIcon(
+      'linkedin',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/linkedin-brands.svg'));
    }
+
 
   ngOnInit() {
 
