@@ -32,7 +32,7 @@
 .containerTopo {
     @extend %flex-start;
     align-items: center;
-    width: 1000px;
+    width: 1100px;
     height: 136px;
     // z-index: 1;
     flex-direction: row;
@@ -41,14 +41,16 @@
 }
 
 .menu {
-    width: 1000px;
+    width: 100%;
     margin-top: -9px;
+    margin-left: 100px;
 }
 
 
 .menuSuperior {
     background-color: rgba(0, 142, 107, 1);
     color: white;
+    
 }
 
 .menuSuperior a {
@@ -79,7 +81,8 @@ mat-icon {
     rgba(181, 181, 181, 0.5);
     width: 100px;        
     top: 0px;
-    
+    position: absolute;
+    z-index: 1;
 }
 
 .logoPrincipal img {

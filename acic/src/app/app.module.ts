@@ -8,13 +8,15 @@ import { MaterialModule           } from './material.module';
 
 import { TopoComponent } from './topo/topo.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BannerPrincipalComponent } from './banner-principal/banner-principal.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    TopoComponent
+    TopoComponent,
+    BannerPrincipalComponent
   ],
   imports: [
     BrowserModule,
