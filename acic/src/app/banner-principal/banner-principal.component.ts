@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { MatCarousel, MatCarouselComponent } from '@ngmodule/material-carousel';
+
 
 @Component({
-  selector: 'app-banner-principal',
+  
+  selector: 'banner',
   templateUrl: './banner-principal.component.html',
   styleUrls: ['./banner-principal.component.scss']
 })
