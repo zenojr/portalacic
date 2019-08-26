@@ -5,7 +5,7 @@ import { AppComponent             } from './app.component';
 import { MenuComponent            } from './menu/menu.component';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { MaterialModule           } from './material.module';
-import { MatCarouselModule        } from '@ngmodule/material-carousel';
+import { SlideshowModule          } from 'ng-simple-slideshow';
 
 import { TopoComponent            } from './topo/topo.component';
 import { HttpClientModule         } from '@angular/common/http';
@@ -25,7 +25,7 @@ import { BannerPrincipalComponent } from './banner-principal/banner-principal.co
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    MatCarouselModule
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
