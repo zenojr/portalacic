@@ -10,9 +10,9 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./banner-principal.component.scss']
 })
 export class BannerPrincipalComponent implements OnInit {
-  count = 0;
+  
   tabs = ['1º Notícia', 'Second', 'Third'];
-  selected = new FormControl(this.count);
+  selected = 0;
 
 
   constructor() {
@@ -20,22 +20,23 @@ export class BannerPrincipalComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.changeTab();
+    this.autoChangeTab();
   }
 
-  addTab(selectAfterAdding: boolean) {
-    this.tabs.push('New');
+  autoChangeTab() {
 
-    if (selectAfterAdding) {
-      this.selected.setValue(this.tabs.length - 1);
+    setInterval(() => {
+
+    if (this.selected === 0) {
+      this.selected = 1;
+    } else if ( this.selected === 1 ) {
+      this.selected = 2;
+    } else if ( this.selected === 2  ) {
+      this.selected = 0;
     }
-  }
+      console.log(this.selected);
+    }, 7000);
 
-  changeTab() {
-    setTimeout(() => {
-      this.count = 1;
-      alert(this.count);
-     }, 3000);
   }
 
 }
