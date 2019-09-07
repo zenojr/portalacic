@@ -1,12 +1,39 @@
 
-  
+  <mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
   
   <mat-tab-group [selectedIndex]="selected"
-                 (selectedIndexChange)="selected.setValue($event)">
-    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
-      Contents for {{tab}} tab
-  
-      
-    </mat-tab>
+                 headerPosition='below'>
+                 <mat-tab>
+                  <ng-template mat-tab-label>
+                    <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+                    First
+                  </ng-template>
+                  Content 1
+                </mat-tab>
+              
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+                    Second
+                  </ng-template>
+                  Content 2
+                </mat-tab>
+              
+                <mat-tab>
+                  <ng-template mat-tab-label>
+                    <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+                    Third
+                  </ng-template>
+              
+                  Content 3
+                </mat-tab>
   </mat-tab-group>
   
