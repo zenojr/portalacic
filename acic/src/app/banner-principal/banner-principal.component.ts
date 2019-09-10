@@ -45,7 +45,6 @@ export class BannerPrincipalComponent implements OnInit {
     } else if ( this.selected === 2  ) {
       this.selected = 0;
     }
-      console.log(this.selected);
     }, 7000);
 
   }

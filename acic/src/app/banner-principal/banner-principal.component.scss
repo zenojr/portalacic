@@ -1,12 +1,20 @@
 .banner {
-    
     position: absolute;
     z-index: -1;
     left: 0px;
     
 }
 
+mat-tab-group {
+    display: flex;
+    
+}
+
 .container {
     width: 1100px;
     margin-top: -8px;
+}
+
+img-banner {
+    height: 100px;
 }
