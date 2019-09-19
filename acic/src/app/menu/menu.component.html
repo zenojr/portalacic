@@ -5,15 +5,24 @@
     <mat-toolbar class="menu">    
         <mat-toolbar-row class="menuSuperior">
             <span>
-            <mat-menu #appMenu="matMenu">
-                <button mat-menu-item>Settings</button>
-                <button mat-menu-item>Help</button>
-            </mat-menu>
-                
-            <button mat-button [matMenuTriggerFor]="appMenu">
+            
+            <button mat-button [matMenuTriggerFor]="menu">
                 A ACIC
                 <mat-icon>keyboard_arrow_down</mat-icon>
             </button>
+
+            <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Histórico</button>
+                    <button mat-menu-item>Diretoria</button>
+                    <button mat-menu-item>Ex-Presidentes</button>
+                    <button mat-menu-item>Balancetes</button>
+                    <button mat-menu-item>Núcleos Empresariais</button>
+                    <button mat-menu-item>Revista ACIC Notícias</button>
+                    <button mat-menu-item>Diretoria</button>
+            </mat-menu>
+
+                
+            
             </span>
             <span>    
                 <button mat-button >

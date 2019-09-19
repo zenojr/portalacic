@@ -10,6 +10,7 @@ import { SlideshowModule          } from 'ng-simple-slideshow';
 import { TopoComponent            } from './topo/topo.component';
 import { HttpClientModule         } from '@angular/common/http';
 import { BannerPrincipalComponent } from './banner-principal/banner-principal.component';
+import { NoticiasDestaqueComponent } from './noticias-destaque/noticias-destaque.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BannerPrincipalComponent } from './banner-principal/banner-principal.co
     AppComponent,
     MenuComponent,
     TopoComponent,
-    BannerPrincipalComponent
+    BannerPrincipalComponent,
+    NoticiasDestaqueComponent
   ],
   imports: [
     BrowserModule,
