@@ -1,10 +1,23 @@
+%noticia-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 10px;
+}
+
 .noticias {
     width: 1100px;
     height: 250px;
     
 }
 
-.noticias mat-grid-tile {
-    
-    background-color: aquamarine;
+
+.item-noticia span {
+    margin: 10px;
+}
+
+.noticia-column {
+    @extend %noticia-column;
 }
