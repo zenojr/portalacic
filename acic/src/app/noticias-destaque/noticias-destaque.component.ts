@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./noticias-destaque.component.scss']
 })
 export class NoticiasDestaqueComponent implements OnInit {
-  
+
 
   constructor() { }
 
