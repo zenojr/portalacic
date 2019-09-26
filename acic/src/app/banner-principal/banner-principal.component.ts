@@ -8,7 +8,7 @@ export interface Banner {
   text: string;
 }
 
-const bgColor = "red";
+
 
 @Component({
 

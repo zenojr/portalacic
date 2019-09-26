@@ -7,3 +7,14 @@
     z-index: -1;
     width: 100%;
 }
+
+.noticiasFundo {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 620px;
+    top: 529.5px;
+    // background-color: rgba(0, 142, 107, 1);
+    background-color: rgba(80, 177, 101, 1);
+    // background-color: rgba(131, 195, 129, 1);
+}
