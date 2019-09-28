@@ -11,6 +11,7 @@ import { TopoComponent            } from './topo/topo.component';
 import { HttpClientModule         } from '@angular/common/http';
 import { BannerPrincipalComponent } from './banner-principal/banner-principal.component';
 import { NoticiasDestaqueComponent } from './noticias-destaque/noticias-destaque.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NoticiasDestaqueComponent } from './noticias-destaque/noticias-destaque
     MenuComponent,
     TopoComponent,
     BannerPrincipalComponent,
-    NoticiasDestaqueComponent
+    NoticiasDestaqueComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

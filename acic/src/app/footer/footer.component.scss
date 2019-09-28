@@ -1,0 +1,31 @@
+%footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 0px 10px 0px 10px;
+}
+
+.footer {
+    width: 1100px;
+    height: 250px;
+    text-align: center;
+    
+}
+
+.idVisual {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logoPrincipal {   
+    margin-top: 250px;
+    float: left;
+    
+}
+
+.logoPrincipal img {
+    width: 180px;
+}
