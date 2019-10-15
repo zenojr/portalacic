@@ -7,5 +7,8 @@
 
 .impostometro-container {
     @extend %flex-center;
+    width: 1100px;
+    height: 250px;
+    text-align: center;
 
 }
