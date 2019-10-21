@@ -11,30 +11,62 @@
             </button>
 
             <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Sobre a  ACIC</button>
                     <button mat-menu-item>Histórico</button>
-                    <button mat-menu-item>Diretoria</button>
                     <button mat-menu-item>Ex-Presidentes</button>
-                    <button mat-menu-item>Balancetes</button>
-                    <button mat-menu-item>Núcleos Empresariais</button>
-                    <button mat-menu-item>Revista ACIC Notícias</button>
                     <button mat-menu-item>Diretoria</button>
+                    <button mat-menu-item>Estatuto</button>
+                    <button mat-menu-item>Identidade Visual</button>
+                    <button mat-menu-item>Listagem de Associados</button>
+                    <button mat-menu-item>Revista ACIC Notícias</button>
+                    <button mat-menu-item>Relatório Semanal de Atividades</button>
+                    <button mat-menu-item>Contato</button>
             </mat-menu>                        
             </span>
-            <span>    
-                <button mat-button >
-                    Notícias
+            <span>            
+                <button mat-button [matMenuTriggerFor]="solucoes">
+                    Soluções Empresariais
+                    <mat-icon>keyboard_arrow_down</mat-icon>
                 </button>
+
+                <mat-menu #solucoes="matMenu">
+                    <button mat-menu-item [matMenuTriggerFor]="cartoes">Cartões</button>
+                    <button mat-menu-item>XML</button>
+                    <button mat-menu-item>Certificado de Origem</button>
+                    <button mat-menu-item>Boa Vista</button>
+                    <button mat-menu-item>Certificado Digital</button>
+                    <button mat-menu-item>Printe</button>
+                    <button mat-menu-item>Uniodonto</button>                    
+                </mat-menu>
+
+                <mat-menu #cartoes="matMenu">
+                    <button mat-menu-item>Útil Card</button>
+                    <button mat-menu-item>Alimentação</button>
+                    <button mat-menu-item>Combustível</button>
+                    <button mat-menu-item>Cartão Prêmio</button>
+                    <button mat-menu-item>Prêmio Natal</button>
+                    <button mat-menu-item>ACIC Mais</button>
+                </mat-menu>
             </span>
             <span>    
-                <button mat-button >
-                    Contatos
+                <button mat-button [matMenuTriggerFor]="nucleos">
+                    Núcleos Empresariais
+                    <mat-icon>keyboard_arrow_down</mat-icon>
                 </button>
+        
+                <mat-menu #nucleos="matMenu">
+                    <button mat-menu-item>Apicultores</button>
+                    <button mat-menu-item>Contadores</button>
+                    <button mat-menu-item>Comunicação</button>
+                    <button mat-menu-item>Gastronomia</button>
+                    <button mat-menu-item>Gestão pela Excelência</button>
+                    <button mat-menu-item>Imobiliário</button>
+                    <button mat-menu-item>Jovem</button>
+                    <button mat-menu-item>Recursos Humanos</button>
+                    <button mat-menu-item>Conselho de Núcleos</button>
+                </mat-menu>     
             </span>
-            <span>    
-                <button mat-button >
-                    Indicadores
-                </button>
-            </span>
+            
             <span class="spacer"></span>
             
             <a href="#">
