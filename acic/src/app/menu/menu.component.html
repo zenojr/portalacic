@@ -84,39 +84,21 @@
         </mat-toolbar-row>
         
         <mat-toolbar-row class="menuInferior">
-            <span>
-                <mat-menu #appMenu="matMenu">
-                    <button mat-menu-item>Settings</button>
-                    <button mat-menu-item>Help</button>
-                </mat-menu>
-                            
-                <button mat-button [matMenuTriggerFor]="appMenu">
-                        Produtos
-                <mat-icon>keyboard_arrow_down</mat-icon>
+            <span>            
+                <button mat-button>
+                    Agenda de cursos e eventos
                 </button>
             </span>
-            <span>
-                <mat-menu #appMenu="matMenu">
-                    <button mat-menu-item>Settings</button>
-                    <button mat-menu-item>Help</button>
-                </mat-menu>
-                                
-                <button mat-button [matMenuTriggerFor]="appMenu">
-                        Serviços Empresariais
-                    <mat-icon>keyboard_arrow_down</mat-icon>
-                </button>
-            </span>
-            <span>    
-                <button mat-button >
-                    Cursos e Palestras
-                </button>
-            </span>
-            <span>    
-                <button mat-button >
+            <span>            
+                <button mat-button>
                     Convênios
                 </button>
             </span>
-            
+            <span>    
+                <button mat-button >
+                    Contato
+                </button>
+            </span>
             <span class="spacer"></span>
             <span>
                 <mat-form-field class="procurar">
