@@ -10,6 +10,8 @@ export class ImpostometroComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
+
 
 }
