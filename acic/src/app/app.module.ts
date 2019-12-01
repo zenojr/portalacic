@@ -13,6 +13,7 @@ import { BannerPrincipalComponent } from './banner-principal/banner-principal.co
 import { NoticiasDestaqueComponent } from './noticias-destaque/noticias-destaque.component';
 import { FooterComponent } from './footer/footer.component';
 import { ImpostometroComponent } from './impostometro/impostometro.component';
+import { SolucoesComponent } from './solucoes/solucoes.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ImpostometroComponent } from './impostometro/impostometro.component';
     BannerPrincipalComponent,
     NoticiasDestaqueComponent,
     FooterComponent,
-    ImpostometroComponent
+    ImpostometroComponent,
+    SolucoesComponent
   ],
   imports: [
     BrowserModule,

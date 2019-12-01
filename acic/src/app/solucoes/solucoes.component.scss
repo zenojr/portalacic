@@ -1,0 +1,14 @@
+%flex-center {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.solucoes-container {
+@extend %flex-center;
+width: 1100px;
+height: 250px;
+text-align: center;
+
+}
+

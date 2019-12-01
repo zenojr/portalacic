@@ -8,12 +8,23 @@
     width: 100%;
 }
 
+.bannerFundo {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 401px;
+    top: 128px;
+    // background-color: rgba(0, 142, 107, 1);
+    background-color: rgba(181, 181, 181, 0.5);
+    // background-color: rgba(131, 195, 129, 1);    
+}
+
 .noticiasFundo {
     width: 100%;
     z-index: -1;
     position: absolute;
     height: 620px;
-    top: 529.5px;
+    top: 779.5px;
     // background-color: rgba(0, 142, 107, 1);
     background-color: rgba(80, 177, 101, 1);
     // background-color: rgba(131, 195, 129, 1);
@@ -24,7 +35,7 @@
     z-index: -1;
     position: absolute;
     height: 300px;
-    top: 1149px;
+    top: 1399px;
     // background-color: rgba(0, 142, 107, 1);
     background-color: rgba(181, 181, 181, 0.5);
     // background-color: rgba(131, 195, 129, 1);
