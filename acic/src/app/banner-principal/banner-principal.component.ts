@@ -9,7 +9,7 @@ export interface Banner {
 }
 
 
-
+ 
 @Component({
 
   selector: 'banner',
