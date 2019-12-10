@@ -17,6 +17,8 @@ export class SolucoesComponent implements OnInit {
   tabs = ['1º Notícia', 'Second', 'Third'];
   selected = 0;
 
+  solution = false;
+
   tiles: Banner[] = [
     {text: 'One', cols: 2, rows: 2, color: 'lightblue'},
     {text: 'Two', cols: 1, rows: 1, color: 'lightgreen'},
@@ -28,6 +30,15 @@ export class SolucoesComponent implements OnInit {
 
   ngOnInit() {
     this.autoChangeTab();
+  }
+
+  controlSolution(value?) {
+    console.log(value);
+    if ( this.solution === false ) {
+      this.solution = true;
+    } else if ( this.solution === true ){
+      this.solution = false;
+    }
   }
 
   autoChangeTab() {

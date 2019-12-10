@@ -6,39 +6,40 @@
                  headerPosition='below'>
                  <mat-tab>
                   <div class="img-banner">
-                    <a href="#"> <img src="../../assets/solucoes/auditorio-acic.jpg" alt=""></a>
-                    <a href="#"> <img src="../../assets/solucoes/certificado-digital.jpg" alt=""></a>
-                    <a href="#"> <img src="../../assets/solucoes/dvdteca.jpg" alt=""></a>
+                    <a (click)="controlSolution('audit')"   href="#"><img src="../../assets/solucoes/auditorio-acic.jpg" alt="audit"></a>
+                    <a (click)="controlSolution('certDig')" href="#"><img src="../../assets/solucoes/certificado-digital.jpg" alt="certDig"></a>
+                    <a (click)="controlSolution('dvdteca')" href="#"><img src="../../assets/solucoes/dvdteca.jpg" alt="dvdteca"></a>
                   </div>
                 </mat-tab>
                 
                 <mat-tab>
                   <div class="img-banner">
-                    <a href="#"> <img src="../../assets/solucoes/empreender-unir.jpg" alt=""> </a>
-                    <a href="#"> <img src="../../assets/solucoes/jusesc.jpg" alt=""> </a>
-                    <a href="#"> <img src="../../assets/solucoes/printe.jpg" alt=""> </a>
+                    <a (click)="controlSolution('empUnir')" href="#"><img src="../../assets/solucoes/empreender-unir.jpg" alt="empUnir"> </a>
+                    <a (click)="controlSolution('jusesc')"  href="#"><img src="../../assets/solucoes/jusesc.jpg" alt="jusesc"> </a>
+                    <a (click)="controlSolution('printe')"  href="#"><img src="../../assets/solucoes/printe.jpg" alt="printe"> </a>
                   </div>
                 </mat-tab>
               
                 <mat-tab>                  
                   <div class="img-banner">
-                    <a href="#"> <img src="../../assets/solucoes/relatorios-acic.jpg" alt=""> </a>
-                    <a href="#"> <img src="../../assets/solucoes/revista-acic.jpg" alt=""> </a>
-                    <a href="#"> <img src="../../assets/solucoes/scpc.jpg" alt=""> </a>
+                    <a (click)="controlSolution('relAcic')" href="#"><img src="../../assets/solucoes/relatorios-acic.jpg" alt="relAcic"> </a>
+                    <a (click)="controlSolution('revista')" href="#"><img src="../../assets/solucoes/revista-acic.jpg" alt="revista"> </a>
+                    <a (click)="controlSolution('scpc')"    href="#"><img src="../../assets/solucoes/scpc.jpg" alt="scpc"> </a>
                   </div>
                 </mat-tab>
 
                 <mat-tab>                  
                   <div class="img-banner">
-                    <a href="#"> <img src="../../assets/solucoes/uniodonto.jpg" alt=""> </a>
-                    <a href="#"> <img src="../../assets/solucoes/util-card-alimentacao.jpg" alt=""> </a>
-                    <a href="#"> <img src="../../assets/solucoes/util-card.jpg" alt=""> </a>
+                    <a (click)="controlSolution('uniodonto')" href="#"><img src="../../assets/solucoes/uniodonto.jpg" alt="uniodonto"> </a>
+                    <a (click)="controlSolution('utilAlim')"  href="#"><img src="../../assets/solucoes/util-card-alimentacao.jpg" alt="utilAlim"> </a>
+                    <a (click)="controlSolution('utilCard')"  href="#"><img src="../../assets/solucoes/util-card.jpg" alt="utilCard"> </a>
                   </div>
                 </mat-tab>
       </mat-tab-group>    
 </div>
 
-<div class="detalheSolucoes" >
+<div *ngIf="solution" class="detalheSolucoes" >
+  <button (click)="controlSolution()">close</button>
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
     Esse cumque quis molestias fugit nobis a aspernatur ut sapiente, 
     nemo voluptatem fugiat? 
