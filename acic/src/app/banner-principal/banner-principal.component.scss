@@ -1,13 +1,11 @@
 .banner {
     position: absolute;
     z-index: -1;
-    left: 0px;
-    
+    left: 0px; 
 }
 
 mat-tab-group {
-    display: flex;
-    
+    display: flex;   
 }
 
 .container {
@@ -18,4 +16,10 @@ mat-tab-group {
 .img-banner img {
     max-width: 549px;
     max-height: 360px;
+}
+
+.bannersRight {
+    margin-left: 1px;
+     margin-top: 1px;
+    
 }

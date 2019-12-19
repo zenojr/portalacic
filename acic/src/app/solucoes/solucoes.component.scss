@@ -9,6 +9,15 @@
     justify-content: center;
 }
 
+%pushToRight {
+    display: flex;
+    align-items: flex-end;
+}
+
+.closer {
+    @extend %pushToRight;
+}
+
 .solucoes-container {
     @extend %flex-center;
     margin-top: 20px;
