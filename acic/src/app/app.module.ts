@@ -6,7 +6,7 @@ import { MenuComponent            } from './menu/menu.component';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { MaterialModule           } from './material.module';
 import { SlideshowModule          } from 'ng-simple-slideshow';
-
+import { AngularFireModule } from '@angular/fire';
 import { TopoComponent            } from './topo/topo.component';
 import { HttpClientModule         } from '@angular/common/http';
 import { BannerPrincipalComponent } from './banner-principal/banner-principal.component';
@@ -33,7 +33,8 @@ import { SolucoesComponent } from './solucoes/solucoes.component';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    SlideshowModule
+    SlideshowModule,
+    AngularFireModule
   ],
   providers: [],
   bootstrap: [AppComponent]
