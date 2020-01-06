@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+
 
 export interface Banner {
   color: string;
@@ -28,11 +27,12 @@ export class SolucoesComponent implements OnInit {
     {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
 
-  constructor( public db: AngularFirestore ) { }
+  constructor() { }
 
   ngOnInit() {
     this.autoChangeTab();
   }
+
 
   controlSolution(value?) {
     console.log(value);
@@ -44,9 +44,7 @@ export class SolucoesComponent implements OnInit {
   }
 
   autoChangeTab() {
-
     setInterval(() => {
-
     if (this.selected === 0) {
       this.selected = 1;
     } else if ( this.selected === 1 ) {
@@ -57,7 +55,6 @@ export class SolucoesComponent implements OnInit {
       this.selected = 0;
     }
     }, 5000);
-
   }
 
 }

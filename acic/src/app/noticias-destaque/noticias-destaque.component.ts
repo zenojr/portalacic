@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -9,10 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticiasDestaqueComponent implements OnInit {
 
+  noticias: Observable<any[]>;
 
-  constructor() { }
+  constructor( public db: AngularFirestore ) { }
 
   ngOnInit() {
+
+    this.noticias = this.db.collection('noticias').valueChanges();
+
+    console.log(this.noticias);
+
   }
 
 }

@@ -6,7 +6,6 @@ import { MenuComponent            } from './menu/menu.component';
 import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
 import { MaterialModule           } from './material.module';
 import { SlideshowModule          } from 'ng-simple-slideshow';
-import { AngularFireModule } from '@angular/fire';
 import { TopoComponent            } from './topo/topo.component';
 import { HttpClientModule         } from '@angular/common/http';
 import { BannerPrincipalComponent } from './banner-principal/banner-principal.component';
@@ -14,6 +13,11 @@ import { NoticiasDestaqueComponent } from './noticias-destaque/noticias-destaque
 import { FooterComponent } from './footer/footer.component';
 import { ImpostometroComponent } from './impostometro/impostometro.component';
 import { SolucoesComponent } from './solucoes/solucoes.component';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+
 
 
 @NgModule({
@@ -34,9 +38,9 @@ import { SolucoesComponent } from './solucoes/solucoes.component';
     MaterialModule,
     HttpClientModule,
     SlideshowModule,
-    AngularFireModule
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule {
