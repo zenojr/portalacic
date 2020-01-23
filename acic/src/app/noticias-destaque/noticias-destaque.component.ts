@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
-
+import { AngularFireStorage } from '@angular/fire/storage';
 
 @Component({
   selector: 'app-noticias-destaque',
@@ -12,11 +12,12 @@ export class NoticiasDestaqueComponent implements OnInit {
 
   noticias: Observable<any[]>;
 
-  constructor( public db: AngularFirestore ) { }
+  constructor( public db: AngularFirestore,
+               private storage: AngularFireStorage ) { }
 
   ngOnInit() {
 
-    this.noticias = this.db.collection('noticias').valueChanges();
+    this.noticias = this.db.collection('noticias', data => data.orderBy('titulo').limitToLast(3) ).valueChanges();
 
     console.log(this.noticias);
 

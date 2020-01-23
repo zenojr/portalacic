@@ -16,9 +16,7 @@ import { SolucoesComponent } from './solucoes/solucoes.component';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-
-
+import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -38,9 +36,10 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     MaterialModule,
     HttpClientModule,
     SlideshowModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule
   ],
-  providers: [AngularFirestore],
+  providers: [AngularFirestore, { provide: StorageBucket, useValue: 'bucket-provide' }],
   bootstrap: [AppComponent]
 })
 export class AppModule {
