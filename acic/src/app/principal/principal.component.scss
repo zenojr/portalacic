@@ -1,0 +1,17 @@
+%flex-center{
+    display: flex;  
+justify-content: center;
+}
+
+.container {
+@extend %flex-center;
+}
+
+.noticias {
+height: 650px;
+}
+
+#imgBanner {
+display: none;
+top: -999px;
+}

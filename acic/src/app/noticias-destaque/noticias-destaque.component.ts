@@ -3,6 +3,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { AngularFireStorage } from '@angular/fire/storage';
 
+
+
 @Component({
   selector: 'app-noticias-destaque',
   templateUrl: './noticias-destaque.component.html',
@@ -12,7 +14,7 @@ export class NoticiasDestaqueComponent implements OnInit {
 
   noticias: Observable<any[]>;
 
-  constructor( public db: AngularFirestore,
+  constructor( public       db: AngularFirestore,
                private storage: AngularFireStorage ) { }
 
   ngOnInit() {

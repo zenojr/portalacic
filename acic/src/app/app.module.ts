@@ -17,6 +17,9 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage';
+import { IntranetComponent } from './intranet/intranet.component';
+import { PrincipalComponent } from './principal/principal.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage';
     NoticiasDestaqueComponent,
     FooterComponent,
     ImpostometroComponent,
-    SolucoesComponent
+    SolucoesComponent,
+    IntranetComponent,
+    PrincipalComponent    
   ],
   imports: [
     BrowserModule,
