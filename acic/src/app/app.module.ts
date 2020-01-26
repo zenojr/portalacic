@@ -20,7 +20,6 @@ import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage';
 import { IntranetComponent } from './intranet/intranet.component';
 import { PrincipalComponent } from './principal/principal.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +43,7 @@ import { PrincipalComponent } from './principal/principal.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule
   ],
-  providers: [AngularFirestore, { provide: StorageBucket, useValue: 'bucket-provide' }],
+  providers: [AngularFirestore, { provide: StorageBucket, useValue: 'portalacic-cacador.appspot.com' }],
   bootstrap: [AppComponent]
 })
 export class AppModule {

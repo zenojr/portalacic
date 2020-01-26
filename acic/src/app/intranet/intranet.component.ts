@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireStorage, AngularFireUploadTask } from '@angular/fire/storage';
 
 @Component({
   selector: 'app-intranet',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntranetComponent implements OnInit {
 
-  constructor() { }
+  constructor( private storage: AngularFireStorage ) { }
 
   ngOnInit() {
+  }
+
+  uploadFile(event) {
+    const file = event.target.files[0];
+    const filePath = 'noticias';
+    const task = this.storage.upload(filePath, file);
+
+
   }
 
 }
