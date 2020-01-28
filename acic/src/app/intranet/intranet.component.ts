@@ -14,10 +14,10 @@ export class IntranetComponent implements OnInit {
   }
 
   uploadFile(event) {
+    
     const file = event.target.files[0];
     const filePath = 'noticias';
     const task = this.storage.upload(filePath, file);
-
 
   }
 

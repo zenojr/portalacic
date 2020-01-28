@@ -15,6 +15,9 @@ export interface Banner {
 })
 export class SolucoesComponent implements OnInit {
 
+  textoSolution = '';
+  auditText = 'Texto para o auditorio da acic';
+
   tabs = ['1º Notícia', 'Second', 'Third'];
   selected = 0;
 
@@ -35,7 +38,14 @@ export class SolucoesComponent implements OnInit {
 
 
   controlSolution(value?) {
+
     console.log(value);
+    if( value === 'audit') {
+      this.textoSolution = this.auditText;
+    } else {
+      this.textoSolution = 'outro';
+    }
+
     if ( this.solution === false ) {
       this.solution = true;
     } else if ( this.solution === true ){
