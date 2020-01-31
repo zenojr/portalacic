@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 
 export interface Banner {
   color: string;
-  cols: number;
-  rows: number;
-  text: string;
+   cols: number;
+   rows: number;
+   text: string;
 }
 
 @Component({
@@ -16,8 +16,8 @@ export interface Banner {
 export class SolucoesComponent implements OnInit {
 
   textoSolution = '';
-  auditText = 'Texto para o auditorio da acic';
-  certDigText = 'Texto da cert digitalllll';
+      auditText = 'Texto para o auditorio da acic';
+    certDigText = 'Texto da cert digitalllll';
 
   tabs = ['1º Notícia', 'Second', 'Third'];
   selected = 0;
@@ -39,11 +39,10 @@ export class SolucoesComponent implements OnInit {
 
 
   controlSolution(value?) {
-
     console.log(value);
-    if( value === 'audit') {
+    if ( value === 'audit') {
       this.textoSolution = this.auditText;
-    } else if( value === 'certDig' ) {
+    } else if ( value === 'certDig' ) {
       this.textoSolution = this.certDigText;
     } else {
       this.textoSolution = 'no data';

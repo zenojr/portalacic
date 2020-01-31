@@ -17,7 +17,7 @@
 .solution-content {
 	 width: 80%;
 	height: 65%;
-	
+	overflow: scroll;
 	background-color: rgba($color: #743a3a, $alpha: 0.8);
 	@extend %flex-center;
 }
