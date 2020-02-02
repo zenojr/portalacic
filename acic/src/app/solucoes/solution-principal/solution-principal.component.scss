@@ -1,0 +1,20 @@
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.topo {
+    width: 900px;
+    height: 200px;
+    background-color: red;
+}
+
+.content {
+    width: 900px;
+    height: 500px;
+    background-color: royalblue;
+}
