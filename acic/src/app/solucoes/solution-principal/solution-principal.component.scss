@@ -8,9 +8,17 @@
 }
 
 .topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 900px;
     height: 200px;
     background-color: red;
+}
+
+.topo > span {
+    padding-left: auto;
 }
 
 .content {
