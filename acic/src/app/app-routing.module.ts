@@ -4,10 +4,12 @@ import { app } from 'firebase';
 import { AppComponent } from './app.component';
 import { IntranetComponent } from './intranet/intranet.component';
 import { PrincipalComponent } from './principal/principal.component';
+import { SolutionPrincipalComponent } from './solucoes/solution-principal/solution-principal.component';
 
 
 const routes: Routes = [
   { path: '', component: PrincipalComponent },
+  { path: 'solucoes', component: SolutionPrincipalComponent },
   { path: 'intranet', component: IntranetComponent }
 ];
 
