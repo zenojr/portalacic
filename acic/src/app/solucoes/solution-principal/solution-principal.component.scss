@@ -1,28 +1,59 @@
 
+%center-column{
+        display: flex;
+    align-items: center;
+ flex-direction: column;
+}
 
+// CLASSES_____________________________________
 
 .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @extend %center-column;
 }
 
 .topo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 900px;
-    height: 200px;
-    background-color: red;
+    @extend %center-column;
+               width: 1100px;
+              height: 150px;
 }
 
-.topo > span {
-    padding-left: auto;
+
+.topo > h2 {
+    color: #808080;
+}
+
+.subtitle{
+    text-align: center;
+    color: #008E6B;
 }
 
 .content {
-    width: 900px;
-    height: 500px;
-    background-color: royalblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 2px;
+    width: 1100px;
+    background-color: rgba($color: #b6b6b6, $alpha: 0.9);    
 }
+
+.solution-elements {
+    margin-top: 10px;
+}
+
+.solution-elements img{
+    border-radius: 2px;
+}
+
+.solution-elements p {
+    text-align: justify;
+    color: white;
+}
+
+.solution-elements h3 {
+    color: #008E6B;
+}
+
+a {
+    text-decoration: none;
+    color: #008E6B;
+}
+
