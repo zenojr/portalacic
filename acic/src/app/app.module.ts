@@ -20,6 +20,7 @@ import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage';
 import { IntranetComponent         } from './intranet/intranet.component';
 import { PrincipalComponent        } from './principal/principal.component';
 import { SolutionPrincipalComponent } from './solucoes/solution-principal/solution-principal.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 
@@ -35,7 +36,8 @@ import { SolutionPrincipalComponent } from './solucoes/solution-principal/soluti
     SolucoesComponent,
     IntranetComponent,
     PrincipalComponent,
-    SolutionPrincipalComponent
+    SolutionPrincipalComponent,
+    SobreComponent
   ],
   imports: [
     BrowserModule,
