@@ -8,7 +8,8 @@ import {MatButtonModule,
         MatInputModule,
         MatTabsModule,
         MatGridListModule,
-        MatDialogModule} from '@angular/material';
+        MatDialogModule,
+        MatDividerModule} from '@angular/material';
 
 import { NgModule } from '@angular/core';
 
@@ -23,7 +24,8 @@ import { NgModule } from '@angular/core';
             MatInputModule,
             MatTabsModule,
             MatGridListModule,
-            MatDialogModule],
+            MatDialogModule,
+            MatDividerModule],
 
   exports: [MatButtonModule,
             MatCheckboxModule,
@@ -35,7 +37,8 @@ import { NgModule } from '@angular/core';
             MatInputModule,
             MatTabsModule,
             MatGridListModule,
-            MatDialogModule],
+            MatDialogModule,
+            MatDividerModule],
 })
 
 export class MaterialModule { }

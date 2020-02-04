@@ -64,6 +64,8 @@ export class SolucoesComponent implements OnInit {
     } else if ( this.selected === 2 ) {
       this.selected = 3;
     } else if ( this.selected === 3 ) {
+      this.selected = 4;
+    } else if ( this.selected === 4 ) {
       this.selected = 0;
     }
     }, 5000);
