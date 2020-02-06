@@ -21,6 +21,7 @@ import { IntranetComponent         } from './intranet/intranet.component';
 import { PrincipalComponent        } from './principal/principal.component';
 import { SolutionPrincipalComponent } from './solucoes/solution-principal/solution-principal.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { NucleosComponent } from './nucleos/nucleos.component';
 
 
 
@@ -37,7 +38,8 @@ import { SobreComponent } from './sobre/sobre.component';
     IntranetComponent,
     PrincipalComponent,
     SolutionPrincipalComponent,
-    SobreComponent
+    SobreComponent,
+    NucleosComponent
   ],
   imports: [
     BrowserModule,
