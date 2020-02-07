@@ -1,5 +1,35 @@
-<input type="file" (change)="uploadFile($event)"> 
 
-<input type="file" (change)="uploadFile($event)" />
-    <div>{{ uploadPercent | async }}</div>
-<a [href]="downloadURL | async">{{ downloadURL | async }}</a>
+<div class="container">
+    <div class="topo">
+        <h2>INTRANET</h2>
+        <span class="subtitle">
+            <h4>Gerenciamento da aplicação
+            </h4>
+        </span>
+    </div>
+    <div class="content">
+        <div id="noticias" class="intranet-elements noticias">
+
+            <mat-form-field class="noticias-form">
+                <mat-label>Titulo Notícia</mat-label>
+                <input matInput placeholder="Insira o titulo" value="">
+            </mat-form-field>
+            
+            <mat-form-field class="noticias-form noticia-text">
+                <mat-label>Conteúdo da notícia</mat-label>
+                <textarea matInput
+                cdkTextareaAutosize
+                #autosize="cdkTextareaAutosize"
+                cdkAutosizeMinRows="50"
+                cdkAutosizeMaxRows="5"></textarea>
+            </mat-form-field>
+
+            <input type="file" (change)="uploadFile($event)"> 
+            <input type="file" (change)="uploadFile($event)" />
+            <!-- <div>{{ uploadPercent | async }}</div> -->
+            <!-- <a [href]="downloadURL | async">{{ downloadURL | async }}</a> -->
+            <mat-divider></mat-divider>    
+        </div>
+
+
+</div>

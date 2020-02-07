@@ -22,6 +22,8 @@ import { PrincipalComponent        } from './principal/principal.component';
 import { SolutionPrincipalComponent } from './solucoes/solution-principal/solution-principal.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { NucleosComponent } from './nucleos/nucleos.component';
+import { NoticiasFullComponent } from './noticias-full/noticias-full.component';
+
 
 
 
@@ -39,7 +41,8 @@ import { NucleosComponent } from './nucleos/nucleos.component';
     PrincipalComponent,
     SolutionPrincipalComponent,
     SobreComponent,
-    NucleosComponent
+    NucleosComponent,
+    NoticiasFullComponent
   ],
   imports: [
     BrowserModule,
