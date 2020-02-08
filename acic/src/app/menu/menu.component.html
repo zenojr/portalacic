@@ -1,6 +1,6 @@
 <div class="containerTopo">
     <div class="logoPrincipal">
-        <a href="#">
+        <a routerLink="/">
             <img src="../../assets/img/ACIC_logo.png" alt="">
         </a>
     </div>
@@ -13,8 +13,8 @@
             </button>
 
             <mat-menu #menu="matMenu">
-                    <button mat-menu-item><a href="/sobre">Sobre a  ACIC</a></button>
-                    <button mat-menu-item><a href="/sobre#historico">Histórico</a></button>
+                    <button mat-menu-item><a routerLink="/sobre" routerLinkActive="router-link-active" >Sobre a  ACIC</a></button>
+                    <button mat-menu-item><a routerLink="/sobre">Histórico</a></button>
                     <button mat-menu-item>Ex-Presidentes</button>
                     <button mat-menu-item>Diretoria</button>
                     <button mat-menu-item>Estatuto</button>
@@ -42,12 +42,12 @@
                 </mat-menu>
 
                 <mat-menu #cartoes="matMenu">
-                    <button mat-menu-item>Útil Card</button>
-                    <button mat-menu-item>Alimentação</button>
-                    <button mat-menu-item>Combustível</button>
-                    <button mat-menu-item>Cartão Prêmio</button>
-                    <button mat-menu-item>Prêmio Natal</button>
-                    <button mat-menu-item>ACIC Mais</button>
+                    <button mat-menu-item routerLink="/solucoes" routerLinkActive="router-link-active" >Útil Card</button>
+                    <button mat-menu-item routerLink="/solucoes">Alimentação</button>
+                    <button mat-menu-item routerLink="/solucoes">Combustível</button>
+                    <button mat-menu-item routerLink="/solucoes">Cartão Prêmio</button>
+                    <button mat-menu-item routerLink="/solucoes">Prêmio Natal</button>
+                    <button mat-menu-item routerLink="/solucoes">ACIC Mais</button>
                 </mat-menu>
             </span>
             <span>    
@@ -57,15 +57,15 @@
                 </button>
         
                 <mat-menu #nucleos="matMenu">
-                    <button mat-menu-item>Apicultores</button>
-                    <button mat-menu-item>Contadores</button>
-                    <button mat-menu-item>Comunicação</button>
-                    <button mat-menu-item>Gastronomia</button>
-                    <button mat-menu-item>Gestão pela Excelência</button>
-                    <button mat-menu-item>Imobiliário</button>
-                    <button mat-menu-item>Jovem</button>
-                    <button mat-menu-item>Recursos Humanos</button>
-                    <button mat-menu-item>Conselho de Núcleos</button>
+                    <button mat-menu-item> <a href="/nucleos#acap">Apicultores</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#nucleo-cont">Contadores</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#nucleo-com">Comunicação</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#nbhr">Gastronomia</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#nucleo-gest">Gestão pela Excelência</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#nic">Imobiliário</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#alcateia">Jovem</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#nhr">Recursos Humanos</a> </button>
+                    <button mat-menu-item> <a href="/nucleos#">Conselho de Núcleos</a> </button>
                 </mat-menu>     
             </span>
             

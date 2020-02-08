@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     @extend %flex-center;
 }
