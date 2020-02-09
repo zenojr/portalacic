@@ -1,0 +1,59 @@
+
+%center-column{
+    display: flex;
+align-items: center;
+flex-direction: column;
+}
+
+// CLASSES_____________________________________
+
+.container {
+@extend %center-column;
+}
+
+.topo {
+@extend %center-column;
+           width: 1100px;
+          height: 150px;
+}
+
+
+.topo > h2 {
+color: #808080;
+}
+
+.subtitle{
+text-align: center;
+color: #008E6B;
+}
+
+.content {
+padding: 0px 20px 0 20px;
+text-align: center;
+border-radius: 2px;
+width: 1100px;
+background-color: rgba($color: #b6b6b6, $alpha: 0.9);    
+}
+
+.nucleos-elements {
+margin-top: 10px;
+}
+
+.nucleos-elements img{
+border-radius: 4px;
+}
+
+.nucleos-elements p {
+text-align: justify;
+color: white;
+}
+
+.nucleos-elements h3 {
+color: #008E6B;
+}
+
+a {
+text-decoration: none;
+color: #008E6B;
+}
+

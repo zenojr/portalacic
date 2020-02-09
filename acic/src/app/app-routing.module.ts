@@ -8,8 +8,7 @@ import { SolutionPrincipalComponent } from './solucoes/solution-principal/soluti
 import { SobreComponent } from './sobre/sobre.component';
 import { NucleosComponent } from './nucleos/nucleos.component';
 import { NoticiasFullComponent } from './noticias-full/noticias-full.component';
-
-
+import { AgendaComponent } from './agenda/agenda.component';
 
 const routes: Routes = [
   { path: '', component: PrincipalComponent },
@@ -17,7 +16,8 @@ const routes: Routes = [
   { path: 'intranet', component: IntranetComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'nucleos', component: NucleosComponent },
-  { path: 'noticias', component: NoticiasFullComponent }
+  { path: 'noticias', component: NoticiasFullComponent },
+  { path: 'agenda', component: AgendaComponent }
 ];
 
 @NgModule({
