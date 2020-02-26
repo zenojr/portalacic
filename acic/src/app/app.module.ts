@@ -24,6 +24,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { NucleosComponent } from './nucleos/nucleos.component';
 import { NoticiasFullComponent } from './noticias-full/noticias-full.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { ContadoresComponent } from './nucleos/contadores/contadores.component';
 
 
 
@@ -44,7 +45,8 @@ import { AgendaComponent } from './agenda/agenda.component';
     SobreComponent,
     NucleosComponent,
     NoticiasFullComponent,
-    AgendaComponent
+    AgendaComponent,
+    ContadoresComponent
   ],
   imports: [
     BrowserModule,
