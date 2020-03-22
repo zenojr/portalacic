@@ -10,7 +10,16 @@ mat-tab-group {
 
 .container {
     width: 1100px;
+    // margin-top: -32px;
+}
+
+.ban_princi{
     margin-top: -32px;
+}
+
+.ban_sec {
+    // margin-top: -6px;
+    height: 250px;
 }
 
 .img-banner img {
@@ -19,7 +28,18 @@ mat-tab-group {
 }
 
 .bannersRight {
-    margin-left: 1px;
-     margin-top: 1px;
     
+    // margin-left: 1px;
+    //  margin-top: 30px;
+     
+    
+}
+
+.cont_ban_sec {
+    padding-top: 30px;
+    height: 500px;
+}
+
+.container_bannersRight {
+    margin-top: 24px;
 }
